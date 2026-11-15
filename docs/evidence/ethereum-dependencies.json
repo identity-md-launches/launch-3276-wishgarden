@@ -1,0 +1,243 @@
+{
+  "chainId": 1,
+  "observedAt": "2026-11-15T13:49:10.179636+00:00",
+  "blockTag": "latest (independent read-only calls, not a single block snapshot)",
+  "officialAddressSource": "https://imd.fun/docs/#crosschain",
+  "rpcSource": "https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api?",
+  "contracts": {
+    "imd": {
+      "address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "sourceContract": "src/BridgedFP.sol:BridgedFP",
+      "runtimeKeccak256": "0x79a1ae149d27d4aae006d4dd75cb834222c9623799bbf34359428aaf66fec3bf",
+      "runtimeSizeBytes": 22990,
+      "liveRuntimeMatchesVerifiedRuntime": true,
+      "sourcify": {
+        "url": "https://sourcify.dev/server/v2/contract/1/0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7?fields=all",
+        "matchId": "27277375",
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "verifiedAt": "2026-03-28T05:43:41Z",
+        "deployment": {
+          "transactionHash": "0xb2e2587f18b440f2c492d911566cb979d4ec477dd69824d9ac17bdae2608704b",
+          "blockNumber": "23501863",
+          "transactionIndex": "95",
+          "deployer": "0x047F606fD5b2BaA5f5C6c4aB8958E45CB6B054B7"
+        },
+        "proxyResolution": {
+          "isProxy": false,
+          "proxyType": null,
+          "implementations": []
+        }
+      },
+      "reads": {
+        "name": {
+          "request": {
+            "action": "eth_call",
+            "to": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+            "data": "0x06fdde03",
+            "tag": "latest"
+          },
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b4964656e746974792e6d64000000000000000000000000000000000000000000"
+        },
+        "symbol": {
+          "request": {
+            "action": "eth_call",
+            "to": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+            "data": "0x95d89b41",
+            "tag": "latest"
+          },
+          "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000003494d440000000000000000000000000000000000000000000000000000000000"
+        },
+        "supply": {
+          "request": {
+            "action": "eth_call",
+            "to": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+            "data": "0x18160ddd",
+            "tag": "latest"
+          },
+          "result": "0x000000000000000000000000000000000000000000037fa27ac9423243070000"
+        },
+        "decimals": {
+          "request": {
+            "action": "eth_call",
+            "to": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+            "data": "0x313ce567",
+            "tag": "latest"
+          },
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+        },
+        "burn_zero": {
+          "request": {
+            "action": "eth_call",
+            "to": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+            "data": "0x42966c680000000000000000000000000000000000000000000000000000000000000000",
+            "tag": "latest"
+          },
+          "error": "HTTP Error 500: Internal Server Error"
+        }
+      },
+      "abiFunctionNames": [
+        "SEND",
+        "SEND_AND_CALL",
+        "allowInitializePath",
+        "allowance",
+        "approvalRequired",
+        "approve",
+        "balanceOf",
+        "combineOptions",
+        "decimalConversionRate",
+        "decimals",
+        "endpoint",
+        "enforcedOptions",
+        "isComposeMsgSender",
+        "isPeer",
+        "lzReceive",
+        "lzReceiveAndRevert",
+        "lzReceiveSimulate",
+        "msgInspector",
+        "name",
+        "nextNonce",
+        "oApp",
+        "oAppVersion",
+        "oftVersion",
+        "owner",
+        "peers",
+        "preCrime",
+        "quoteOFT",
+        "quoteSend",
+        "renounceOwnership",
+        "send",
+        "setDelegate",
+        "setEnforcedOptions",
+        "setMsgInspector",
+        "setPeer",
+        "setPreCrime",
+        "sharedDecimals",
+        "symbol",
+        "token",
+        "totalSupply",
+        "transfer",
+        "transferFrom",
+        "transferOwnership",
+        "updateName",
+        "updateNameAndSymbol",
+        "updateSymbol"
+      ],
+      "decimals": 18,
+      "burnConclusion": "No public burn(uint256) or burnFrom(address,uint256). OFT _debit burns as part of cross-chain send, with remote credit; not used by this app. transfer to address(0) reverts. Sink transfer leaves totalSupply unchanged.",
+      "liveBurnProbeLimit": "Explorer burn(0) query returned HTTP 500; that error is not evidence of a revert. Absence of public burn is independently confirmed by verified source, ABI, dispatcher, and executable offline runtime tests."
+    },
+    "identityNFT": {
+      "address": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+      "sourceContract": "src/IdentityMD.sol:IdentityMD",
+      "runtimeKeccak256": "0x68d046e0bfb8185d9db0a9a7ed57420f22dfc38321c9c91453a001a47668c530",
+      "runtimeSizeBytes": 5231,
+      "liveRuntimeMatchesVerifiedRuntime": true,
+      "sourcify": {
+        "url": "https://sourcify.dev/server/v2/contract/1/0x0000ec93127baa929e58e97dd0095a2bfb38ec1d?fields=all",
+        "matchId": "28853423",
+        "creationMatch": "match",
+        "runtimeMatch": "match",
+        "verifiedAt": "2026-05-14T01:34:25Z",
+        "deployment": {
+          "transactionHash": "0x25e008101b72a7b7690febd6a79869555bb825604dddebe6fcecbee66982e31c",
+          "blockNumber": "25090085",
+          "transactionIndex": "155",
+          "deployer": "0x047F606fD5b2BaA5f5C6c4aB8958E45CB6B054B7"
+        },
+        "proxyResolution": {
+          "isProxy": false,
+          "proxyType": null,
+          "implementations": []
+        }
+      },
+      "reads": {
+        "name": {
+          "request": {
+            "action": "eth_call",
+            "to": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+            "data": "0x06fdde03",
+            "tag": "latest"
+          },
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b6964656e746974792e6d64000000000000000000000000000000000000000000"
+        },
+        "symbol": {
+          "request": {
+            "action": "eth_call",
+            "to": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+            "data": "0x95d89b41",
+            "tag": "latest"
+          },
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000449444d4400000000000000000000000000000000000000000000000000000000"
+        },
+        "supply": {
+          "request": {
+            "action": "eth_call",
+            "to": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+            "data": "0x18160ddd",
+            "tag": "latest"
+          },
+          "result": "0x00000000000000000000000000000000000000000000000000000000000007d0"
+        },
+        "supports721": {
+          "request": {
+            "action": "eth_call",
+            "to": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+            "data": "0x01ffc9a780ac58cd00000000000000000000000000000000000000000000000000000000",
+            "tag": "latest"
+          },
+          "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        "ownerOf0": {
+          "request": {
+            "action": "eth_call",
+            "to": "0x0000ec93127baa929e58e97dd0095a2bfb38ec1d",
+            "data": "0x6352211e0000000000000000000000000000000000000000000000000000000000000000",
+            "tag": "latest"
+          },
+          "result": "0x000000000000000000000000200e710acaa6a93bbc77146026328c40f1d60fb1"
+        }
+      },
+      "abiFunctionNames": [
+        "MAX_SUPPLY",
+        "approve",
+        "balanceOf",
+        "cancelOwnershipHandover",
+        "completeOwnershipHandover",
+        "epoch",
+        "getApproved",
+        "hasIdentityHash",
+        "hasMinted",
+        "identityAllowed",
+        "identityHash",
+        "identityHashLocked",
+        "isApprovedForAll",
+        "mint",
+        "name",
+        "owner",
+        "ownerOf",
+        "ownershipHandoverExpiresAt",
+        "renderer",
+        "renounceOwnership",
+        "requestOwnershipHandover",
+        "safeTransferFrom",
+        "safeTransferFrom",
+        "setApprovalForAll",
+        "setEpoch",
+        "setIdentityAllowed",
+        "setIdentityHash",
+        "setUniv4Hook",
+        "setUniv4Pool",
+        "supportsInterface",
+        "symbol",
+        "tokenURI",
+        "totalSupply",
+        "transferFrom",
+        "transferOwnership",
+        "univ4Hook",
+        "univ4Pool"
+      ],
+      "eligibleTokenIds": "0..1999, subject to current ownerOf and lifetime claim consumption"
+    }
+  }
+}
